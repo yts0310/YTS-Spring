@@ -28,12 +28,12 @@ task docs (dependsOn: javadoc, type: Copy) {
 }
 
 task runNormalMain(type: JavaExec) {
-	main = 'com.YTS.jdbc.chap02.NormalMain'
+	main = 'com.YTS.jdbc.spring.NormalMain'
 	classpath =  sourceSets.main.runtimeClasspath
 }
 
 task runSpringMain(type: JavaExec) {
-	main = 'org.jacob.book.chap02.SpringMain'
+	main = 'com.YTS.jdbc.spring.SpringMain'
 	classpath =  sourceSets.main.runtimeClasspath
 }
 
@@ -54,5 +54,10 @@ task runMemberMainUsingComponentScan(type: JavaExec) {
 
 task runSpringJdbcMain (type: JavaExec) {
 	main = 'com.YTS.jdbc.spring.SpringJdbcMain'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runRegisterMain (type: JavaExec) {
+	main = 'com.YTS.jdbc.spring.MemberService'
 	classpath =  sourceSets.main.runtimeClasspath
 }
