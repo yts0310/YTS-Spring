@@ -61,3 +61,20 @@ task runRegisterMain (type: JavaExec) {
 	main = 'com.YTS.jdbc.chap3.MemberRegisterService'
 	classpath =  sourceSets.main.runtimeClasspath
 }
+
+
+task runChap08MemberMain(type: JavaExec) {
+	main = 'com.YTS.jdbc.chap08.MemberMain'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runChap08MemberMainUsingSpring(type: JavaExec) {
+	main = 'com.YTS.jdbc.chap08.MemberMainUsingSpring'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+
+task runArticleMainUsingSpring (type: JavaExec) {
+	main = 'com.YTS.jdbc.spring.ArticleMainUsingSpring'
+	classpath =  sourceSets.main.runtimeClasspath
+}
