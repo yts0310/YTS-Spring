@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
  * 
  * @author Jacob
  */
-@Repository
+@Repository("memberDao")
 public interface MemberDao {
 
 	/**

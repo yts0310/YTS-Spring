@@ -11,6 +11,7 @@ import com.YTS.jdbc.chap3.Member;
  * 
  * @author Jacob
  */
+@Service
 public class MemberService {
 
 	Logger logger = LogManager.getLogger();
@@ -38,9 +39,9 @@ public class MemberService {
 
 	public void insertMember() {
 		Member member = new Member();
-		member.setEmail("yts03100310@naver.com");
+		member.setEmail("abc123zxc@naver.com");
 		member.setPassword("a");
-		member.setName("윤태식");
+		member.setName("과제용abc");
 		memberDao.insert(member);
 		logger.debug("Insert complete.");
 	}
