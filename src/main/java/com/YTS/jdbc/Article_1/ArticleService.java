@@ -44,7 +44,7 @@ public class ArticleService {
 		article.setContent(
 				"Content");
 		article.setUserId("1");
-		article.setName("윤태식");
+		article.setName("가나다");
 		if (articleDao.addArticle(article) > 0)
 			System.out.println("글을 추가했습니다.");
 		else
