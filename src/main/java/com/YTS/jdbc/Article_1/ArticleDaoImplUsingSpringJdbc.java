@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import com.YTS.jdbc.Article.Article;
+
 /**
  * Spring JDBC를 사용해서 ArticleDao를 구현
  * 
